@@ -1,0 +1,115 @@
+/* reset */
+*,
+*::before *,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* sizing */
+html {
+  font-size: 62.5%;
+}
+
+/* roots */
+:root {
+  --color--primary: #219f95;
+  --color--secondary: #afcedd;
+  --color--heading--secondary: #234894;
+  --color--heading--primary: #1e1e1e;
+  --color--description: #696969;
+}
+
+/* Icon */
+.icon {
+  background-color: var(--color--secondary);
+  font-weight: 900px;
+  font-size: 1.8rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  color: var(--color--heading--secondary);
+}
+
+/* btn */
+.view-request {
+  font-family: "vazir";
+  font-weight: 600;
+  background-color: var(--color--primary);
+  border-style: none;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* requests */
+.block-requests{
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-requests{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.card {
+  display: grid;
+  gap: 1rem;
+}
+
+/* user profile picture */
+.profile-picture {
+  border-radius: 8px;
+  width: 4rem;
+  height: 4rem;
+}
+
+.card--nameWithProfilePic{
+  display: flex;
+  align-items:center;
+  gap: 0.25rem;}
+/* card style */
+.card--lineOne {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-lineTwo {
+  display: grid;
+}
+
+.card--lineThree {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* colors and weights */
+.card--title {
+  font-weight: 600;
+  color: var(--color--heading--secondary);
+}
+
+.card-date {
+  color: var(--color--description);
+  font-weight: 400;
+}
+.card--description__primary {
+  color: var(--color--heading--primary);
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.card--description__seondary {
+  color: var(--color--description);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.card--userName {
+  color: var(--color--heading--primary);
+  font-weight: 700;
+}
